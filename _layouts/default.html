@@ -8,13 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% feed_meta %}
 </head>
 <body>
   <div class="wrap">
     <header class="site-header">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a class="site-title" href="{{ '/' | relative_url }}"><span class="site-logo" aria-hidden="true"></span>{{ site.title }}</a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Entradas</a>
         <a href="{{ '/contacto/' | relative_url }}">Contacto</a>
