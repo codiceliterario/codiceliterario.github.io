@@ -77,12 +77,23 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   border-bottom: 2px dotted var(--rule);
 }
 .site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: var(--display);
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.2;
   color: var(--ink);
   text-decoration: none;
+}
+.site-logo {
+  flex: none;
+  width: 1.9rem;
+  height: 1.9rem;
+  background-color: var(--accent);
+  -webkit-mask: url("../img/hexagono.svg") center / contain no-repeat;
+  mask: url("../img/hexagono.svg") center / contain no-repeat;
 }
 .site-nav { font-family: var(--display); font-size: 1.15rem; }
 .site-nav a { margin-left: 1.25rem; color: var(--ink-soft); }
@@ -158,10 +169,14 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 .post-body hr { border: 0; margin: 2.5rem 0; text-align: center; }
 .post-body hr::after {
-  content: "*   *   *";
-  font-family: var(--display);
-  color: var(--ink-soft);
-  letter-spacing: 0.2em;
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  background-color: var(--ink-soft);
+  -webkit-mask: url("../img/hexagono.svg") center / contain no-repeat;
+  mask: url("../img/hexagono.svg") center / contain no-repeat;
 }
 
 .post-body ul, .post-body ol { padding-left: 1.5rem; margin: 0 0 1rem; }
