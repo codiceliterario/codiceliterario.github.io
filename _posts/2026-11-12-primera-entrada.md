@@ -4,7 +4,7 @@ title: Primera entradag
 ---
 Este es el primer apunte del cuaderno. Reemplazalo por lo que quieras decir.
 
-Los párrafos siguientes llevan sangría, como en un libro impreso. Se puede escribir en *cursiva*, en **negrita** y poner [enlaces](https://alanlscalia.github.io).
+Los párrafos siguientes llevan sangría, como en un libro impreso. Se puede escribir en *cursiva*, en **negrita** y poner [enlaces](https://codiceliterario.github.io).
 
 > Las citas van con una línea al costado y en cursiva.
 
