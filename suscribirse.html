@@ -1,0 +1,16 @@
+---
+layout: page
+title: Suscribirse
+permalink: /suscribirse/
+---
+<p>Este blog tiene un feed RSS: una dirección que un lector de noticias consulta para avisarte cuando hay una entrada nueva. Abierta en el navegador se ve como texto sin formato, porque está pensada para programas y no para personas.</p>
+
+<p>Para seguir el blog, copiá esta dirección y pegala en tu lector:</p>
+
+<p><input class="feed-url" type="text" readonly value="{{ '/feed.xml' | absolute_url }}" onclick="this.select()" aria-label="Dirección del feed RSS"></p>
+
+<p>O agregalo directamente en uno de estos:</p>
+<ul>
+  <li><a href="https://feedly.com/i/subscription/feed/{{ '/feed.xml' | absolute_url | uri_escape }}">Feedly</a></li>
+  <li><a href="https://www.inoreader.com/?add_feed={{ '/feed.xml' | absolute_url | uri_escape }}">Inoreader</a></li>
+</ul>

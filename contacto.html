@@ -1,0 +1,23 @@
+---
+layout: page
+title: Contacto
+permalink: /contacto/
+---
+<p>Si querés escribirme, dejá tu mensaje acá y me llega por correo.</p>
+
+<form class="contact-form" action="https://formsubmit.co/alanlscalia@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Mensaje nuevo desde el blog">
+  <input type="hidden" name="_next" value="{{ '/gracias/' | absolute_url }}">
+  <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+  <label for="nombre">Nombre</label>
+  <input id="nombre" type="text" name="name" required autocomplete="name">
+
+  <label for="email">Tu correo</label>
+  <input id="email" type="email" name="email" required autocomplete="email">
+
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="message" rows="7" required></textarea>
+
+  <button type="submit">Enviar mensaje</button>
+</form>
